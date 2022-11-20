@@ -73,8 +73,6 @@ const createNotification = (type, title, message, time) => {
             </div>
         `
 
-        console.log(notificationSnippet);
-
         const notifyContainer = document.querySelector('.notify-container');
 
         notifyContainer.insertAdjacentHTML("beforeEnd", notificationSnippet);
