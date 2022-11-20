@@ -1,0 +1,67 @@
+html, body {
+  font-family: "Consolas";
+  margin: 0;
+  padding: 0;
+}
+
+.notify-container {
+  width: 550px;
+  height: 60vh;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
+.notification {
+  margin: 0 auto;
+  color: white;
+  width: 350px;
+  background: linear-gradient(90deg, #ffbf00 3%, #2a2a2a 3%);
+  padding: 1px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 15px;
+  -webkit-animation: fadeIn 0.2s;
+          animation: fadeIn 0.2s;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.notification .top-bar {
+  display: flex;
+}
+.notification .top-bar .fas {
+  position: absolute;
+  top: 20px;
+  left: 28px;
+}
+.notification .top-bar .title {
+  position: relative;
+  top: 10px;
+  left: 80px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  max-width: 250px;
+  font-weight: 700;
+}
+.notification .text {
+  position: relative;
+  top: 0;
+  left: 80px;
+  max-width: 250px;
+  font-size: 16px;
+}
